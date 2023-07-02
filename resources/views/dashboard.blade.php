@@ -81,6 +81,6 @@
             });
         }
     </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAybSLqiX0i6-ZM1zno4vvCFPQIKyIg3AQ&callback=initMap"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key={{env("GOOGLE_MAPS_API_TOKEN")}}&callback=initMap"></script>
 
 </x-app-layout>
