@@ -17,9 +17,9 @@
             </div>
         </div>
     </div>
+
     <div id="map" class="mx-auto w-3/4 h-96"></div>
-
-
+    
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
@@ -30,34 +30,42 @@
         </div>
     </div>
 
-    <div class="container flex align-middle justify-center">
-        <h1 class="text-white text-center m-60" style="font-size: 52px">Pedido 001</h1>
-        <x-timeline :items="$timelineItems" />
+    <div id="map" class="mx-auto w-3/4 h-96"></div>
+
+    <div class="flex flex-col justify-center align-middle text-center">
+        
+        <div>
+            <h1 class="text-white  m-60" style="font-size: 52px">Pedido 001</h1>
+            <x-timeline  :items="$timelineItems" />
+        </div>
+
+        <div class="">
+            <h1 class="text-white m-60" style="font-size: 52px">Pedido 002</h1>
+            <x-timeline :items="$timelineItems" />
+        </div>
+
+        <div class="">
+            <h1 class="text-white m-60" style="font-size: 52px">Pedido 003</h1>
+            <x-timeline :items="$timelineItems" />
+        </div>
+
     </div>
 
-    <div class="container flex align-middle justify-center">
-        <h1 class="text-white text-center m-60" style="font-size: 52px">Pedido 002</h1>
-        <x-timeline :items="$timelineItems" />
-    </div>
-
-    <div class="container flex align-middle justify-center">
-        <h1 class="text-white text-center m-60" style="font-size: 52px">Pedido 003</h1>
-        <x-timeline :items="$timelineItems" />
-    </div>
+    
 
 
 
 
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <!-- <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script>
         var map = L.map('map').setView([51.5074, -0.1278], 12);
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
         }).addTo(map);
-    </script>
+    </script> -->
 
 
-    <!-- <script>
+    <script>
         function initMap() {
             // Crie uma instância do mapa
             var map = new google.maps.Map(document.getElementById('map'), {
@@ -73,6 +81,6 @@
             });
         }
     </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key={{ env('GOOGLE_MAPS_API_KEY')}}&callback=initMap"></script> -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAybSLqiX0i6-ZM1zno4vvCFPQIKyIg3AQ&callback=initMap"></script>
 
 </x-app-layout>
